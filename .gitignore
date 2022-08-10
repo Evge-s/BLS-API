@@ -4,6 +4,8 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+*.sln
+*.csproj
 *.rsuser
 *.suo
 *.user
@@ -62,6 +64,8 @@ BenchmarkDotNet.Artifacts/
 project.lock.json
 project.fragment.lock.json
 artifacts/
+appsettings.json
+appsettings.Development.json
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
