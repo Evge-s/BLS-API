@@ -11,5 +11,6 @@ namespace BLS_API.Models.Entity
         public string? Value { get; set; }
         public List<Aspect>? Aspects { get; set; }
         public List<Footnote>? Footnotes { get; set; }
+        public Calculation? Calculations { get; set; }
     }
 }
