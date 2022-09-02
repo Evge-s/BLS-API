@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace BLS_API.Models.Dto.Request
 {
-    public class OptionalParametersReqest
+    public class OptionalParametersRequest
     {
         [JsonPropertyName("seriesid")]
         public List<string> SeriesId { get; set; }

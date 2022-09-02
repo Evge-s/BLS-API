@@ -2,7 +2,7 @@
 
 namespace BLS_API.Models.Dto.Request
 {
-    public class PopularSeriesReqest
+    public class PopularSeriesRequest
     {
         [JsonPropertyName("survey")]
         public string? Survey { get; set; }

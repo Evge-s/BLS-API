@@ -2,7 +2,7 @@
 
 namespace BLS_API.Models.Dto.Request
 {
-    public class LatestSeriesDataReqest
+    public class LatestSeriesDataRequest
     {
         [JsonPropertyName("seriesid")]
         public string SeriesId { get; set; }

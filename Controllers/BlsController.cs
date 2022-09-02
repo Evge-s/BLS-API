@@ -41,7 +41,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("singleseries")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> SingleSeries(MultipleReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> SingleSeries(MultipleRequest request)
         {
             var result = await _blsService.MultipleSeries(request);
             return Ok(result);
@@ -54,7 +54,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("multipleseries")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> MultipleSeries(MultipleReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> MultipleSeries(MultipleRequest request)
         {
             var result = await _blsService.MultipleSeries(request);
             return Ok(result);
@@ -70,7 +70,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("optionalparametersSeries")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> OptionalParametersSeries(OptionalParametersReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> OptionalParametersSeries(OptionalParametersRequest request)
         {
             var result = await _blsService.OptionalParametersSeries(request);
             return Ok(result);
@@ -82,7 +82,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("latestseriesdata")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> LatestSeriesData(LatestSeriesDataReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> LatestSeriesData(LatestSeriesDataRequest request)
         {
             var result = await _blsService.LatestSeriesData(request);
             return Ok(result);
@@ -95,7 +95,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("popularseries")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> PopularSeries(PopularSeriesReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> PopularSeries(PopularSeriesRequest request)
         {
             var result = await _blsService.PopularSeriesData(request);
             return Ok(result);
@@ -119,7 +119,7 @@ namespace BLS_API.Controllers
         /// <param name="request"></param>
         /// <returns></returns>
         [HttpPost("singlesurvey")]
-        public async Task<ActionResult<BlsServiceResponse<string>>> SingleSurvey(SingleSurveyReqest request)
+        public async Task<ActionResult<BlsServiceResponse<string>>> SingleSurvey(SingleSurveyRequest request)
         {
             var result = await _blsService.SingleSurveyData(request);
             return Ok(result);

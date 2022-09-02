@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 
 namespace BLS_API.Models.Dto.Request
 {
-    public class SingleSurveyReqest
+    public class SingleSurveyRequest
     {
         [Required]
         [JsonPropertyName("surveyAbbreviation")]
